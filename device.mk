@@ -68,6 +68,8 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 	ro.adb.secure=0 \
 	ro.debuggable=1 \
 	persist.service.adb.enable=1
+	
+PRODUCT_COPY_FILES += device/samsung/core33g/zImage:kernel
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_core33g
