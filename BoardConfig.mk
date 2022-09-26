@@ -51,7 +51,7 @@ BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8
 BOARD_KERNEL_PAGESIZE := 2048
 #TARGET_KERNEL_CONFIG := cyanogen_core33g_defconfig
 #TARGET_KERNEL_SOURCE := kernel/samsung/core33g
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/core33g/dt.img
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --androidboot.selinux=permissive --dt device/samsung/core33g/dt.img
 TARGET_PREBUILT_KERNEL   := device/samsung/core33g/zImage
 TARGET_PREBUILT_DTB      := device/samsung/core33g/dt
 
